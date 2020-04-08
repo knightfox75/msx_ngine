@@ -1,10 +1,10 @@
 ;***********************************************************
 ;
 ;	N'gine para MSX Asm Z80
-;	Version 0.0.1-a
+;	Version 0.2.0-a
 ;
-;	(cc)2018 Cesar Rincon "NightFox"
-;	http://www.nightfoxandco.com
+;	(cc) 2018-2020 Cesar Rincon "NightFox"
+;	https://nightfoxandco.com
 ;
 ;	Definicion de constantes
 ;
@@ -45,12 +45,6 @@ NGN_KEY_STATE_HELD	.EQU	1	; Bit 0 a 1 [HELD]
 NGN_KEY_STATE_PRESS	.EQU	2	; Bit 1 a 1 [PRESS]
 NGN_KEY_STATE_UP	.EQU	4	; Bit 2 a 1 [UP]
 NGN_KEY_STATE_LAST	.EQU	8	; Bit 3 a 1 [LAST] (Estado en el frame anterior)
-
-
-
-; ----------------------------------------------------------
-; Definiciones para el sistema de Sprites
-; ----------------------------------------------------------
 
 
 

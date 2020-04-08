@@ -1,12 +1,12 @@
 ;***********************************************************
 ;
-; NGN TEMPLATE para ASMSX
-; ASM Z80 MSX
+;	NGN TEMPLATE para ASMSX
+;	ASM Z80 MSX
 ;
-; Archivo principal
+;	Archivo principal
 ;
-; (cc)2018 Cesar Rincon "NightFox"
-; http://www.nightfoxandco.com
+;	(cc) 2018-2020 Cesar Rincon "NightFox"
+;	https://nightfoxandco.com
 ;
 ;***********************************************************
 

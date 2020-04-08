@@ -1,10 +1,10 @@
 ;***********************************************************
 ;
-; NGN TEMPLATE para ASMSX
-; ASM Z80 MSX
+;	NGN TEMPLATE para ASMSX
+;	ASM Z80 MSX
 ;
-; (cc)2018 Cesar Rincon "NightFox"
-; http://www.nightfoxandco.com
+;	(cc) 2018-2020 Cesar Rincon "NightFox"
+;	https://nightfoxandco.com
 ;
 ;***********************************************************
 
@@ -17,23 +17,23 @@
 ;***********************************************************
 
 ; ----------------------------------------------------------
-; Definicion de variables [PAGE 3] $C000
-; ----------------------------------------------------------
-; Almacena las variables en la pagina 3 (Comentar si no es una ROM)
-.PAGE 3
-.INCLUDE "ngn/ngn_vars.asm"
-
-
-
-; ----------------------------------------------------------
-; Otras directivas
+; Directivas de principales
 ; ----------------------------------------------------------
 
-.PAGE 1					; Selecciona la pagina 1 [$4000] (Codigo del programa)
 .BIOS					; Nombres de las llamadas a BIOS
-.ROM					; Se creara el binario en formato ROM de hasta 32kb
-.START PROGRAM_START_ADDRESS		; Indicale al compilador donde empieza el programa
-.db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0	; 12 ceros para completar la cabecera de la ROM
+
+OUTPUT_FORMAT_BINARY = 1	; Formato de salida binario de BASIC
+OUTPUT_FORMAT_ROM = 2		; Formato de salida ROM
+
+
+
+; ----------------------------------------------------------
+; Selecciona la directiva de compilacion (descomentar)
+; ----------------------------------------------------------
+
+;.INCLUDE "formats/f_binary.asm"		; Binario de BASIC
+.INCLUDE "formats/f_rom.asm"			; Cartucho ROM
+
 
 
 
@@ -47,7 +47,9 @@ PROGRAM_START_ADDRESS:
 	; Punto de incicio
 	; ----------------------------------------------------------
 
-	.SEARCH			; Busca un punto de inicio valido
+	IF (OUTPUT_FORMAT == OUTPUT_FORMAT_ROM)
+		.SEARCH			; Busca un punto de inicio valido
+	ENDIF
 
 
 	; ----------------------------------------------------------
