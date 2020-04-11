@@ -1,0 +1,8 @@
+--------------------------------------------------------------------------------
+N'gine para MSX Asm Z80 Changelog
+--------------------------------------------------------------------------------
+
+2020-04-11 Ver.0.2.1.
+--------------------------------------------------------------------------------
+- Compilado usando la actualización de MSX N'gine, que incorporaba algunas
+  optimizaciones en la llamada de rutinas del BIOS. (Gracias a Néstor Sancho)

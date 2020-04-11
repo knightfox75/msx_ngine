@@ -10,8 +10,6 @@
 
 
 
-
-
 ;***********************************************************
 ; Directivas para el compilador
 ;***********************************************************
@@ -22,18 +20,21 @@
 
 .BIOS					; Nombres de las llamadas a BIOS
 
-OUTPUT_FORMAT_BINARY = 1	; Formato de salida binario de BASIC
-OUTPUT_FORMAT_ROM = 2		; Formato de salida ROM
-
 
 
 ; ----------------------------------------------------------
 ; Selecciona la directiva de compilacion (descomentar)
 ; ----------------------------------------------------------
 
+OUTPUT_FORMAT_BINARY = 1	; Formato de salida binario de BASIC
+OUTPUT_FORMAT_ROM = 2		; Formato de salida ROM
+OUTPUT_FORMAT_COM = 3		; Formato de salida COM para MSX-DOS
+OUTPUT_FORMAT_CAS = 4		; Formato de salida binario de BASIC (Salida en formato .CAS y .WAV)
+
 ;.INCLUDE "formats/f_binary.asm"		; Binario de BASIC
 .INCLUDE "formats/f_rom.asm"			; Cartucho ROM
-
+;.INCLUDE "formats/f_com.asm"			; Binario en formato .COM para MSX-DOS
+;.INCLUDE "formats/f_cas.asm"			; Imagen .CAS y archivo de audio .WAV
 
 
 
