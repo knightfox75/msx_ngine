@@ -36,7 +36,7 @@ OUTPUT_FORMAT = 2									; Define el formato de salida
 
 .PAGE 1												; Selecciona la pagina 1 [$4000] (Codigo del programa)
 .ROM												; Se creara el binario en formato ROM de hasta 32kb
-.db 77, 83, 88, 95, 68, 73, 65, 71, 0, 0, 0, 0      ; 12 digitos para completar la cabecera de la ROM
+.db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0              ; 12 digitos para completar la cabecera de la ROM
 
 ; Indicale al compilador donde empieza el programa
 .START PROGRAM_START_ADDRESS
