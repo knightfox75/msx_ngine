@@ -2,6 +2,12 @@
 N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 
+2020-04-13 Ver.0.2.2-WIP01
+--------------------------------------------------------------------------------
+- Cambios menores en la inicializacion del PSG (el volumen de los canales se
+  inicializa a 0 ahora)
+
+
 2020-04-11 Ver.0.2.1.
 --------------------------------------------------------------------------------
 - Compilado usando la actualización de MSX N'gine, que incorporaba algunas
