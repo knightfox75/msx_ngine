@@ -1,6 +1,7 @@
 ;***********************************************************
 ;
-;	NGN TEMPLATE para ASMSX
+;   N'gine para MSX Asm Z80
+;   Version 0.2.1-WIP01
 ;	ASM Z80 MSX
 ;	Directivas de compilacion para ROM de 32kb
 ;
@@ -21,22 +22,24 @@
 
 OUTPUT_FORMAT = 2									; Define el formato de salida
 
+
 ; ----------------------------------------------------------
-; Definicion de variables [PAGE 3] $C000
+; Definicion de variables en los ultimos 4KB [$E380]
+; Ultima direccion valida $F380 - $1000
 ; ----------------------------------------------------------
 
-; Almacena las variables en la pagina 3 (Comentar si no es una ROM)
-.PAGE 3
-.INCLUDE "ngn/ngn_vars.asm"
+; Almacena las variables los ultimos 4KB
+.ORG $E380
+.INCLUDE "ngn/ngn_vars.asm"         ; 2284 bytes
 
 
 ; ----------------------------------------------------------
 ; Directivas del formato
 ; ----------------------------------------------------------
 
-.PAGE 1												; Selecciona la pagina 1 [$4000] (Codigo del programa)
+.PAGE 1										        ; Selecciona la pagina 1 [$4000] (Codigo del programa)
 .ROM												; Se creara el binario en formato ROM de hasta 32kb
-.db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0              ; 12 digitos para completar la cabecera de la ROM
+.db 77, 83, 88, 95, 68, 73, 65, 71, 0, 0, 0, 0      ; 12 digitos para completar la cabecera de la ROM
 
 ; Indicale al compilador donde empieza el programa
 .START PROGRAM_START_ADDRESS

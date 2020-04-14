@@ -1,6 +1,7 @@
 ;***********************************************************
 ;
-;	NGN TEMPLATE para ASMSX
+;   N'gine para MSX Asm Z80
+;   Version 0.2.1-WIP01
 ;	ASM Z80 MSX
 ;	Directivas de compilacion para .COM de MSX-DOS
 ;
@@ -21,20 +22,23 @@
 
 OUTPUT_FORMAT = 3							; Define el formato de salida
 
+
+; ----------------------------------------------------------
+; Definicion de variables en los ultimos 4KB [$E380]
+; Ultima direccion valida $F380 - $1000
+; ----------------------------------------------------------
+
+; Almacena las variables los ultimos 4KB
+.ORG $E380
+.INCLUDE "ngn/ngn_vars.asm"         ; 2284 bytes
+
+
 ; ----------------------------------------------------------
 ; Directivas del formato
 ; ----------------------------------------------------------
 
-; Los programas de MSX-DOS no requieren direccion inicial
-.MSXDOS										; Se creara el binario en formato .COM para MSX-DOS
-
-
-; ----------------------------------------------------------
-; Definicion de variables
-; ----------------------------------------------------------
-
-; Almacena las variables
-.INCLUDE "ngn/ngn_vars.asm"
+.ORG $0100				; Selecciona el punto inicial por defecto en MSX-DOS [$0100]
+.MSXDOS					; Se creara el binario en formato .COM para MSX-DOS
 
 
 ;***********************************************************

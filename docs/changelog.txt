@@ -6,6 +6,8 @@ N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 - Cambios menores en la inicializacion del PSG (el volumen de los canales se
   inicializa a 0 ahora)
+- El programa ahora reserva 4096 bytes de memoria para variables y las
+  ubica en la dirección más alta disponible ($E380)
 
 
 2020-04-11 Ver.0.2.1.
