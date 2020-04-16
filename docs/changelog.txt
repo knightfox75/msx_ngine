@@ -8,6 +8,10 @@ N'gine para MSX Asm Z80 Changelog
   inicializa a 0 ahora)
 - El programa ahora reserva 4096 bytes de memoria para variables y las
   ubica en la dirección más alta disponible ($E380)
+- Cambiado el algoritmo para la generación de números pseudo aleatorios
+  de 8 bits.
+- Cambio de la sistaxis usada en el acceso a los puertos de ($00) a [$00].
+- Incorporada rutina personalizada para esperar al Vsync.
 
 
 2020-04-11 Ver.0.2.1.
