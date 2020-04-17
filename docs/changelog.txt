@@ -12,6 +12,8 @@ N'gine para MSX Asm Z80 Changelog
   de 8 bits.
 - Cambio de la sistaxis usada en el acceso a los puertos de ($00) a [$00].
 - Incorporada rutina personalizada para esperar al Vsync.
+- Añadida la funcion NGN_TEXT_PRINT_BCD para imprimir un número en formato
+  BCD de entre 0 y 99999.
 
 
 2020-04-11 Ver.0.2.1.
