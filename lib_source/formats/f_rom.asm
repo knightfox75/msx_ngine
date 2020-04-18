@@ -30,7 +30,7 @@ OUTPUT_FORMAT = 2									; Define el formato de salida
 
 ; Almacena las variables los ultimos 4KB
 .ORG $E380
-.INCLUDE "ngn/ngn_vars.asm"         ; 2284 bytes
+.INCLUDE "ngn/ngn_vars.asm"         ; 2285 bytes
 
 
 ; ----------------------------------------------------------

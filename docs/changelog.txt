@@ -14,6 +14,13 @@ N'gine para MSX Asm Z80 Changelog
 - Incorporada rutina personalizada para esperar al Vsync.
 - Añadida la funcion NGN_TEXT_PRINT_BCD para imprimir un número en formato
   BCD de entre 0 y 99999.
+- Añadida la variable de sistema NGN_SCREEN_MODE que almacena el ultimo modo
+  de pantalla seleccionado con los comandos de la libreria
+- Añadidas las funciones NGN_SYSTEM_FD9A_PATCH_ON y NGN_SYSTEM_FD9A_PATCH_OFF
+  que permiten parchear el sistema de interrupciones para que el comando HALT
+  espere con seguridad a la interrupcion del VDP, mejorando enormemente la
+  sincronización y tasa de FPS.
+  Información obtenida en: http://karoshi.auic.es/index.php?topic=212.0
 
 
 2020-04-11 Ver.0.2.1.
