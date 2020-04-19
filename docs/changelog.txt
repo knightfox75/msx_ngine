@@ -2,28 +2,30 @@
 N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 
-2020-04-13 Ver.0.2.2-WIP01
+2020-04-19 Ver.0.3.0
 --------------------------------------------------------------------------------
-- Cambios menores en la inicializacion del PSG (el volumen de los canales se
-  inicializa a 0 ahora)
+- Cambios menores en la inicialización del PSG (el volumen de los canales se
+  inicializa a 0 ahora).
 - El programa ahora reserva 4096 bytes de memoria para variables y las
-  ubica en la dirección más alta disponible ($E380)
+  ubica en la dirección más alta disponible ($E380).
 - Cambiado el algoritmo para la generación de números pseudo aleatorios
   de 8 bits.
-- Cambio de la sistaxis usada en el acceso a los puertos de ($00) a [$00].
+- Cambio de la sintaxis usada en el acceso a los puertos de ($00) a [$00].
 - Incorporada rutina personalizada para esperar al Vsync.
-- Añadida la funcion NGN_TEXT_PRINT_BCD para imprimir un número en formato
-  BCD de entre 0 y 99999.
+- Añadida la función NGN_TEXT_PRINT_BCD para imprimir un número en formato
+  BCD de 3 bytes entre 0 y 99999.
 - Añadida la variable de sistema NGN_SCREEN_MODE que almacena el ultimo modo
-  de pantalla seleccionado con los comandos de la libreria
+  de pantalla seleccionado con los comandos de la librería.
 - Añadidas las funciones NGN_SYSTEM_FD9A_PATCH_ON y NGN_SYSTEM_FD9A_PATCH_OFF
   que permiten parchear el sistema de interrupciones para que el comando HALT
-  espere con seguridad a la interrupcion del VDP, mejorando enormemente la
+  espere con seguridad a la interrupción del VDP, mejorando enormemente la
   sincronización y tasa de FPS.
   Información obtenida en: http://karoshi.auic.es/index.php?topic=212.0
+- Añadida la función NGN_BCD_ADD que realiza la suma entre dos números en
+  formato BCD de 3 bytes (0-99999).
 
 
 2020-04-11 Ver.0.2.1.
 --------------------------------------------------------------------------------
 - Compilado usando la actualización de MSX N'gine, que incorporaba algunas
-  optimizaciones en la llamada de rutinas del BIOS. (Gracias a Néstor Sancho)
+  optimizaciones en la llamada de rutinas del BIOS. (Gracias a Néstor Sancho).
