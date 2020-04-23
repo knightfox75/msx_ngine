@@ -2,6 +2,12 @@
 N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 
+2020-04-20 Ver.0.3.1
+--------------------------------------------------------------------------------
+- Corregido un bug en la función NGN_TEXT_PRINT_BCD que no imprimía un valor
+  numérico de 0 si no se especificaban ceros a la izquierda.
+  
+
 2020-04-19 Ver.0.3.0
 --------------------------------------------------------------------------------
 - Cambios menores en la inicialización del PSG (el volumen de los canales se
