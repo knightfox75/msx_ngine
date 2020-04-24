@@ -2,6 +2,13 @@
 N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 
+2020-04-24 Ver.0.3.2
+--------------------------------------------------------------------------------
+- Optimización menor en los bucles de inicialización de ngn_start.asm
+- Se corrige el bug que causaba que si se cargaba el programa desde una unidad
+  de disco, esta siguiera encendida incluso después de iniciar el programa.
+
+
 2020-04-20 Ver.0.3.1
 --------------------------------------------------------------------------------
 - Corregido un bug en la función NGN_TEXT_PRINT_BCD que no imprimía un valor
