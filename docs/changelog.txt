@@ -2,6 +2,12 @@
 N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 
+2020-04-30 Ver.0.3.3
+--------------------------------------------------------------------------------
+- Se elimina la variable de sistema NGN_SCREEN_MODE.
+- Añadida la función de resta de numeros en formato BCD.
+
+
 2020-04-24 Ver.0.3.2
 --------------------------------------------------------------------------------
 - Optimización menor en los bucles de inicialización de ngn_start.asm
