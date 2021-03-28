@@ -1,7 +1,7 @@
 ;***********************************************************
 ;
 ;   N'gine para MSX Asm Z80
-;   Version 0.3.0
+;   Version 0.3.4-alpha-alpha
 ;	ASM Z80 MSX
 ;	Directivas de compilacion para .COM de MSX-DOS
 ;

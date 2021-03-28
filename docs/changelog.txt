@@ -2,7 +2,7 @@
 N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 
-2021-03-28 Ver.0.3.4
+2021-03-28 Ver.0.3.4-alpha
 --------------------------------------------------------------------------------
 - Añadida la función NGN_TEXT_PRINT_INTEGER que realiza la impresion de un
   numero entero sin signo entre 0 y 65535.
