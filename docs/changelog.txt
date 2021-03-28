@@ -2,6 +2,16 @@
 N'gine para MSX Asm Z80 Changelog
 --------------------------------------------------------------------------------
 
+2021-03-28 Ver.0.3.4
+--------------------------------------------------------------------------------
+- Añadida la función NGN_TEXT_PRINT_INTEGER que realiza la impresion de un
+  numero entero sin signo entre 0 y 65535.
+- Cambiadas las etiquetas locales @@SETUP_VDP por SETUP_VDP en el archivo
+  ngn_screen.asm y @@SETUP_VDP por UPDATE_SPRITE_VDP en el archivo
+  ngn_sprite.asm para mantener la compatibilidad con las última versión
+  de ASMSX. (Gracias a Fubu por el aviso).
+  
+
 2020-04-30 Ver.0.3.3
 --------------------------------------------------------------------------------
 - Se elimina la variable de sistema NGN_SCREEN_MODE.

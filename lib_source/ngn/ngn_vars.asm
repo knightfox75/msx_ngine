@@ -1,7 +1,7 @@
 ;***********************************************************
 ;
 ;	N'gine para MSX Asm Z80
-;	Version 0.3.3
+;	Version 0.3.4
 ;
 ;	(cc) 2018-2020 Cesar Rincon "NightFox"
 ;	https://nightfoxandco.com
@@ -195,10 +195,11 @@ NGN_SPRITE_31:		ds	4
 
 ; -----------------------------------------------------------------------
 ;	Variables genericas
-;   Total: 2 bytes
+;   Total: 9 bytes
 ; -----------------------------------------------------------------------
 
 NGN_RANDOM_SEED:	ds	1       ; Semilla del random
+NGN_TEMP_VAR:       ds  8       ; 8 bytes de variable para temporales
 
 
 
