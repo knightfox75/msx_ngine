@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download asMSX
+        uses: duhow/download-github-release-assets@v1.1.0
+        with:
+          repository: Fubukimaru/asMSX
+          tag: 1.0.1
+          files: asmsx-linux-x86_64.zip
+      - name: Setup asMSX
+        run: |
+          unzip asmsx-*.zip
+          sudo install asmsx /usr/local/bin
+      - name: Build
+        working-directory: lib_source
+        run: asmsx ngn_template.asm
